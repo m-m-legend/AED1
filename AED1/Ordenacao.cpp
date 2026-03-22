@@ -16,6 +16,19 @@ void InsertionSort(int B[], int n){
 		
 }
 }
+
+//Bubble Sort
+void BubbleSort(int L[], int n) { 
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n - 1 - i; j++) {
+            if (L[j] > L[j + 1]) {
+                int troca = L[j];
+                L[j] = L[j + 1];
+                L[j + 1] = troca;
+            }
+        }
+    }
+}
 //Merge Sort
 void Merge(int B[], int inicio, int meio, int fim) {
     int tam = fim-inicio+1;int C[tam]; int i = inicio; int j = meio+1; 
